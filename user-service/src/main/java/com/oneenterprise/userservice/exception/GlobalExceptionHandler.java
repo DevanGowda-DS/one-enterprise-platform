@@ -6,10 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-/**
- * Centralized exception handling (Day 2 lesson: don't return raw exceptions,
- * and don't scatter try/catch blocks across controllers).
- */
+
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
