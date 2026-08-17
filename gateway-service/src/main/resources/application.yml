@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        # Day 3: /api/users/**  ->  User Service (strips the /api prefix)
+        - id: user-service-route
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - StripPrefix=1
+
+        # Day 3: /api/orders/** ->  Order Service (strips the /api prefix)
+        - id: order-service-route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/orders/**
+          filters:
+            - StripPrefix=1
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO

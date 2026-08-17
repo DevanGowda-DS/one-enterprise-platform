@@ -1,0 +1,4 @@
+# Project exclude paths
+/gateway-service/target/
+/order-service/target/
+/user-service/target/
