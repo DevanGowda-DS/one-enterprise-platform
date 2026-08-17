@@ -1,8 +1,6 @@
 package com.oneenterprise.orderservice.model;
 
-/**
- * Internal order representation. Order Service owns this data exclusively (Day 3).
- */
+
 public class Order {
 
     private final Long orderId;
