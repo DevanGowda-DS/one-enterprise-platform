@@ -10,12 +10,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestClient;
 
-/**
- * Day 5: configure a reusable RestClient for calling User Service.
- * Day 2/3: the base URL is externalized via application.properties,.
- * Day 4: a connection/read timeout is applied so Order Service never waits forever
- * on a slow or unresponsive User Service.
- */
+
+
 @Configuration
 public class RestClientConfig {
 
