@@ -1,10 +1,7 @@
 package com.oneenterprise.orderservice.exception;
 
-/**
- * Thrown when User Service cannot be reached, times out, or the circuit is open.
- * Day 4 lesson: this is a deliberate, meaningful error rather than a leaked
- * low-level connection exception.
- */
+// Thrown when User Service cannot be reached, times out, or the circuit is open.
+ 
 public class UserServiceUnavailableException extends RuntimeException {
 
     public UserServiceUnavailableException(String message, Throwable cause) {
