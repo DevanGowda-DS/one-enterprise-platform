@@ -1,12 +1,6 @@
 package com.oneenterprise.userservice.model;
 
-/**
- * Internal representation of a user.
- *
- * Day 2 lesson: this internal model is intentionally NOT returned directly
- * from the API. The controller maps it to {@link com.oneenterprise.userservice.dto.UserResponse}
- * so that internal fields (e.g. createdBy, internalFlag) never leak into the public contract.
- */
+
 public class User {
 
     private final Long id;
