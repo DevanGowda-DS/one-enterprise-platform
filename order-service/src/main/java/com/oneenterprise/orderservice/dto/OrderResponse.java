@@ -1,8 +1,6 @@
 package com.oneenterprise.orderservice.dto;
 
-/**
- * Public API contract for Order Service (Day 2: intentional response model).
- */
+
 public record OrderResponse(
         Long orderId,
         Long userId,
