@@ -13,8 +13,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * resolve a logical service name (e.g. USER-SERVICE) to a live instance
  * address instead of relying on a hard-coded host/port.
  *
- * DAY 6: this entire module is new. Runs on port 8761.
+ * this entire module is new. Runs on port 8761.
  * Dashboard: http://localhost:8761
+ *
  */
 @SpringBootApplication
 @EnableEurekaServer // Day 6: turns this plain Spring Boot app into a Eureka registry
