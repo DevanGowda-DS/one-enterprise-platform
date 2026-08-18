@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.oneenterprise</groupId>
+        <artifactId>one-enterprise-platform</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>discovery-server</artifactId>
+    <name>Discovery Server</name>
+    <description>
+        Day 6: Eureka Service Registry. Acts as the "phone directory" for the
+        platform - User Service, Order Service, and the Gateway all register
+        here so they can find each other by logical name instead of a fixed
+        host/port. Runs on port 8761.
+    </description>
+
+    <!-- Day 6: only dependency needed is the Eureka Server starter. Version is
+         resolved from the spring-cloud-dependencies BOM imported in the root pom. -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>discovery-server</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
