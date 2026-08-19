@@ -48,6 +48,9 @@ public class RestClientConfig {
                 .setDefaultRequestConfig(requestConfig)
                 .build();
 
+//bridge between:
+//→ Spring's RestClient
+//→ Apache HttpClient
         var requestFactory = new HttpComponentsClientHttpRequestFactory(httpClient);
 
         return RestClient.builder()

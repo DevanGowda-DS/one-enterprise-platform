@@ -37,12 +37,12 @@
     </properties>
 
     <modules>
-        <module>discovery-server</module> <!-- Day 6: Eureka registry -->
+        <module>discovery-server</module>
+        <module>config-server</module>  <!-- add this -->
         <module>user-service</module>
         <module>order-service</module>
         <module>gateway-service</module>
     </modules>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -54,5 +54,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
